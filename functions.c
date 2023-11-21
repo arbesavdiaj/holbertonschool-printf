@@ -15,8 +15,8 @@ int print_char(va_list list)
 
 /**
  * print_string - prints string from va_list
- *@list: list of arguments
- *Return: length of the string
+ * @list: list of arguments
+ * Return: length of the string
  */
 
 int print_string(va_list list)
