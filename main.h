@@ -5,9 +5,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *struct print_struct - print_struct
- *@f: identifier of the function
- *@var_type: function associated with the identifier
+ *struct Print - struct print
+ *@id: identifier of the function
+ *@print: function associated with the identifier
  */
 
 typedef struct Print
