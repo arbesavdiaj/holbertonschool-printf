@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * get_function - selects the correct function to perform the operation asked by the user.
+ * get_function - selects the correct function to perform the operation asked
+ * by the user.
  * @c: operator passed as argument to the program.
  * Return: a pointer to the function that corresponds to the operator given as
  * a parameter. Example: get_function('c') will return a pointer to the
