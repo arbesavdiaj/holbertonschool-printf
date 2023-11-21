@@ -1,15 +1,12 @@
 #include "main.h"
 
-int putss(char *c)
+int putss(char *str)
 {
 	int count = 0;
-
-	if (c)
+	while (str[count] != '\0')
 	{
-		for (count = 0; c[count] != '\0'; count++)
-		{
-			putchar(c[count]);
-		}
+		_putchar(str[count]);
+		count++;
 	}
 	return (count);
 }

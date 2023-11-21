@@ -10,15 +10,18 @@
  *@var_type: function associated with the identifier
  */
 
-typedef struct print_struct
+typedef struct Print
 {
-	char *var_type;
-	int (*f)(va_list arg_list);
-} p_struct;
+	char *id;
+	int (*print)(va_list list);
+} print;
 
 int _putchar (char c);
 int _printf(const char *format, ...);
-int print_char(va_list char_list);
-int print_string(va_list string_list);
+int print_char(va_list list);
+int print_string(va_list list);
+int print_int(va_list list);
+int print_double(va_list list);
+int (*get_function(char c))(va_list);
 
 #endif

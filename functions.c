@@ -1,25 +1,59 @@
-#include "main.h"
-
-int print_char(va_list char_list)
+#include <stdarg.h>
+#include <stdio.h>
+/**
+ * print_char - functions that prints char character from va_list
+ * @list: list of arguments
+ * Return: Return always 1
+ */
+int print_char(va_list list)
 {
-	char letter = va_arg(char_list, int);
-	putchar(letter);
+	char temp = va_arg(list, int);
 
-	return(1);
+	putchar(temp);
+	return (1);
 }
 
-int print_string(va_list string_list)
+/**
+ * print_string - prints string from va_list
+ *@list: list of arguments
+ *Return: length of the string
+ */
+
+int print_string(va_list list)
 {
-	char *str;
-	int i;
+	char *temp = va_arg(list, char *);
+	int i = 0;
+	int length = 0;
+	char *nul = "(null)";
 
-	str = va_arg(string_list, char*);
+	if (temp)
+	{
+	while (temp[i] != '\0')
+	{
+		putchar(temp[i]);
+		length++;
+		i++;
+	}
+	}
+	else
+	{
+		while (nul[i] != '\0')
+		{
+			putchar(nul[i]);
+			length++;
+			i++;
+		}
+	}
 
-	for (i = 0; str[i] != '\0'; i++)
-		putchar(str[i]);
 
-	return i;
+	return (length);
 }
+
+/**
+ * print_int - prints an int from va_list
+ * @list: list of arguments
+ * Return: length of the int
+ */
 
 int print_int(va_list list)
 {
@@ -49,3 +83,8 @@ int print_int(va_list list)
 	return (r);
 }
 
+/**
+ * print_unsigned_int - prints an unsigned int from va_list
+ * @list: list of arguments
+ * Return: length of unsigned int
+ */
