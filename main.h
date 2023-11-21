@@ -2,6 +2,8 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
  *struct print_struct - print_struct
  *@f: identifier of the function
@@ -15,11 +17,8 @@ typedef struct print_struct
 } p_struct;
 
 int _putchar (char c);
-int print_char (va_list cha);
-int print_string(va_list string);
-int print_int(va_list arg_list);
-int intt(long int n, int count);
 int _printf(const char *format, ...);
-
+int print_char(va_list char_list);
+int print_string(va_list string_list);
 
 #endif
