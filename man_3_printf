@@ -2,11 +2,11 @@
 .SH NAME
 _printf - formatted output conversion
 .SH SYNOPSIS
-	int _printf(const char *format, ...);
+        int _printf(const char *format, ...);
 .SH DESCRIPTION
-The _printf() function writes output to stdout according to a format string.
+The _printf() function writes output to stdout according to a format string. The 'format' is a null-terminated string that contains zero or more directives.
 .SH OPTIONS
-Format specifiers:
+Format specifiers (preceded by a '%' sign in the format string):
 .IP \%c
 Print a single character.
 .IP \%s
@@ -18,11 +18,14 @@ Print a percent sign.
 .SH RETURN VALUE
 Upon successful return, _printf() returns the number of characters printed (excluding the null byte used to end output to strings).
 .SH ERRORS
-No known errors.
+If _printf() is called with a null pointer as the format string, the behavior is undefined. No other known errors.
 .SH EXAMPLES
-	_printf("Hello, World!\\n");
+        _printf("Hello, World!\\n");
 Prints "Hello, World!" followed by a newline to stdout.
+        _printf("Number: \%d\\n", 5);
+Prints "Number: 5" followed by a newline to stdout.
 .SH BUGS
 No known bugs.
 .SH AUTHOR
 Arbes Avdiaj and Ralf Semi.
+
