@@ -1,4 +1,4 @@
-.TH man _printf
+.TH _printf
 .SH NAME
 _printf - formatted output conversion
 .SH SYNOPSIS
