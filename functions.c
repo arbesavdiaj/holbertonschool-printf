@@ -12,7 +12,7 @@ int print_char(va_list list)
 {
 	char temp = va_arg(list, int);
 
-	putchar(temp);
+	_putchar(temp);
 
 	return (1);
 }
@@ -34,7 +34,7 @@ int print_string(va_list list)
 	{
 	while (temp[i] != '\0')
 	{
-		putchar(temp[i]);
+		_putchar(temp[i]);
 		length++;
 		i++;
 	}
@@ -43,7 +43,7 @@ int print_string(va_list list)
 	{
 		while (nul[i] != '\0')
 		{
-			putchar(nul[i]);
+			_putchar(nul[i]);
 			length++;
 			i++;
 		}
@@ -65,7 +65,7 @@ int print_int(va_list list)
 
 	if (number < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		r++;
 		t = t * -1;
 		number = number * -1;
@@ -78,7 +78,7 @@ int print_int(va_list list)
 	}
 	while (l > 0)
 	{
-		putchar('0' + (number / l) % 10);
+		_putchar('0' + (number / l) % 10);
 		l = l / 10;
 	}
 	return (r);
