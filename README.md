@@ -29,9 +29,8 @@ int main(void)
 {
     _printf("Hello, %s!\n", "World");
     return (0);
-}
 
-Authors
+```
+## Authors
 
-Arbes Avdiaj and Ralf Semi 
-
+Arbes Avdiaj and Ralf Semi
