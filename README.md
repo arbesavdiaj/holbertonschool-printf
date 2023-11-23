@@ -33,4 +33,8 @@ int main(void)
 ```
 ## Authors
 
-Arbes Avdiaj and Ralf Semi
+Arbes Avdiaj 
+@arbesavdiaj
+
+Ralf Semi
+@rifla93
