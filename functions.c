@@ -60,14 +60,14 @@ int print_int(va_list list)
 {
 	long int number = (long int) va_arg(list, int);
 	long int l = 1;
-	long int t = number;
+	long int temp = number;
 	int r = 1;
 
 	if (number < 0)
 	{
 		putchar('-');
 		r++;
-		t = t * -1;
+		temp = temp * -1;
 		number = number * -1;
 	}
 	while (t > 9)
