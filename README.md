@@ -34,7 +34,7 @@ int main(void)
 ## Authors
 
 Arbes Avdiaj 
-@arbesavdiaj
+[@arbesavdiaj](https://github.com/arbesavdiaj)
 
 Ralf Semi
-@rifla93
+[@rifla93](https://github.com/rifla93)
