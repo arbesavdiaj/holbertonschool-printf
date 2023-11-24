@@ -27,7 +27,7 @@ Compile with: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ## Usage
 
 Include the "main.h" header file and call the function as follows:
-```
+```c
 #include "main.h"
 
 int main(void)
@@ -37,12 +37,12 @@ int main(void)
 }
 ```
 ## Examples
-
+```c
         _printf("Hello, World!\\n");
 Prints "Hello, World!" followed by a newline to stdout.
         _printf("Number: \%d\\n", 5);
 Prints "Number: 5" followed by a newline to stdout.
-
+```
 ## Additional Information
 
 When calling _printf("hello %s\n", "world", 1, 2, 3, 4);, the function has no way to know that more arguments were passed, so it will just ignore them. The function will not fail. The user is responsible for calling the functionthe right way.
