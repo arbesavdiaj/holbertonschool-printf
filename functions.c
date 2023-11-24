@@ -70,7 +70,7 @@ int print_int(va_list list)
 		temp = temp * -1;
 		number = number * -1;
 	}
-	while (digit > 9)
+	while (temp > 9)
 	{
 		temp = temp / 10;
 		weight = weight * 10;
