@@ -35,11 +35,12 @@ int main(void)
     _printf("Hello, %s!\n", "World");
     return (0);
 }
-```c
+
 ## Additional Information
 
 When calling _printf("hello %s\n", "world", 1, 2, 3, 4);, the function has no way to know that more arguments were passed, so it will just ignore them. The function will not fail. The user is responsible for calling the functionthe right way.
 
+```c
 ## Authors
 
 Arbes Avdiaj 
