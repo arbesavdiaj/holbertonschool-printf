@@ -28,6 +28,13 @@ Compile with: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 Include the "main.h" header file and call the function as follows:
 ```c
+## Examples
+
+        _printf("Hello, World!\\n");
+Prints "Hello, World!" followed by a newline to stdout.
+        _printf("Number: \%d\\n", 5);
+Prints "Number: 5" followed by a newline to stdout.
+
 #include "main.h"
 
 int main(void)
