@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a custom implementation of the C standard library function, `printf`. Our function, `_printf`, produces output according to a format by writing output to stdout, the standard output stream.
+This repository contains a custom implementation of the printf function, a commonly used function in the C programming language. The printf function is used for formatted output. It allows the programmer to specify the type of data and the representation of that data. Our implementation aims to replicate the functionality of the original printf function, while also providing a learning experience in low-level programming, memory management, and algorithm optimization.
 
 ## Features
 
@@ -13,6 +13,11 @@ Our `_printf` handles the following conversion specifiers:
 - `%` : A % followed by another % character will write a single % to the stream.
 - `d` : Signed decimal integer
 - `i` : Signed decimal integer
+
+## Requirements
+
+- GCC compiler
+- Basic knowledge of C programming language
 
 ## Compilation
 
@@ -29,8 +34,12 @@ int main(void)
 {
     _printf("Hello, %s!\n", "World");
     return (0);
+}
+```c
+## Additional Information
 
-```
+When calling _printf("hello %s\n", "world", 1, 2, 3, 4);, the function has no way to know that more arguments were passed, so it will just ignore them. The function will not fail. The user is responsible for calling the functionthe right way.
+
 ## Authors
 
 Arbes Avdiaj 
