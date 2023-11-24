@@ -59,29 +59,29 @@ int print_string(va_list list)
 int print_int(va_list list)
 {
 	long int number = (long int) va_arg(list, int);
-	long int l = 1;
+	long int weight = 1;
 	long int temp = number;
-	int r = 1;
+	int digit = 1;
 
 	if (number < 0)
 	{
 		putchar('-');
-		r++;
+		digit++;
 		temp = temp * -1;
 		number = number * -1;
 	}
-	while (t > 9)
+	while (digit > 9)
 	{
-		t = t / 10;
-		l = l * 10;
-		r++;
+		temp = temp / 10;
+		weight = weight * 10;
+		digit++;
 	}
-	while (l > 0)
+	while (weight > 0)
 	{
-		putchar('0' + (number / l) % 10);
-		l = l / 10;
+		putchar('0' + (number / weight) % 10);
+		weight = weight / 10;
 	}
-	return (r);
+	return (digit);
 }
 
 /**
